@@ -8,12 +8,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Would You Lose?</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Devin's Awesome Website</title>
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+    
 </head>
 
 <body>
     <div id="content">
+<<<<<<< Updated upstream
         <h1>welcome to my website</h1>
         <p>play my game or you smell :)</p>
         <a href="GetToSchool5/index.html">
@@ -22,7 +25,65 @@
             <p> play the modified version here.</p>
             <a href="gojobizareadventure/index.html">
                 <img src="img/cat.png" alt="Funny cat"
+=======
+        <div id="banner">
+            <h1>Devins Awesome Website</h1>
+           <a href="Index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="Gameguide.html">Get To School</a>
+            <a href="#" onclick="changeSheet()">Change Mode</a>
+            <br>
+        </div>
+        <div id="blogposts">
+            <div class="post">
+               <div style> <h2>About Me</h2> </div>
+                <p>I play games sometimes, and I do not touch grass.</p>
+                <img src="img/bug.png" alt="lootbug" class="left"> <p>A lootbug, who is my son. His name is hector.</p>
+                <br>
+                <p>Click <a href="about.html">here</a> to learn more.</p>
+                <br>
+            </div>
+
+            <div class="post2">
+                <h2 style="display: block;">Get to school</h2>
+                <img src="img/Gamescreen.png" alt="Game Loading screen" class="left">
+                <p>Game Loading Screen</p>
+                <br>
+
+                <p>Get to school 5 is the long awaited finale to the "Get to School" Pentalogy </p>
+                <p>Click <a href="Gameguide.html">here</a> to learn more!</p>
+
+
+
+            </div>
+        </div>
+>>>>>>> Stashed changes
     </div>
+    </div>
+
 </body>
+<script>
+    var lightMode = true;
+
+    function changeSheet() {
+
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+
+
+</script>
 
 </html>

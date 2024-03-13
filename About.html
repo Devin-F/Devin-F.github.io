@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin's Awesome Website</title>
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1>Devins Awesome Website</h1>
+            <a href="Index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="Gameguide.html">Get To School</a>
+            <a href="#" onclick="changeSheet()">Change Mode</a>
+        </div>
+        <div id="blogposts">
+            <div class="post">
+                <h1>About Me</h1>
+                <p> i really only play video games all day long. Some of my favorite games are
+                    Clone Drone In the Danger Zone, Elden Ring, and Boneworks.</p>
+                    <img src="img/clone.jpg" alt="">
+                    <img src="img/elden.jpg" alt="">
+                    <img src="img/bone.png" alt="">
+                  <p>  my main consoles are Xbox and Meta quest.</p>
+                <br>
+                <p>I HATE bugs with a passion</p>
+
+            </div>
+
+            <div class="post">
+                <h2 style="display: block;">Fun Facts</h1>
+                
+                    <p>I HATE bugs and arachnids with a passion.</p>
+                    <br> 
+                    <p>My favorite boss in gaming is Magma Wyrm Makar from Elden Ring.</p>
+                    <img src="img/makar.png" alt="Game Loading screen" class="left">
+
+
+                    <script>
+                        var lightMode = true;
+                    
+                        function changeSheet() {
+                    
+                            lightMode = !lightMode;
+                            var lightSheet = document.getElementById("lightSheet");
+                            var darkSheet = document.getElementById("darkSheet");
+                    
+                            if (lightMode == false) {
+                                console.log("Turning dark mode on...");
+                                darkSheet.media = "";
+                                lightSheet.media = "none";
+                            } else {
+                    
+                                console.log("Turning light mode on...");
+                                darkSheet.media = "none";
+                                lightSheet.media = "";
+                            }
+                        }
+                    
+                    
+                    </script>

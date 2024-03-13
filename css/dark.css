@@ -1,0 +1,97 @@
+body {
+    font-size: 15px;
+     font-family: Aptos, monospace;
+     color: #ccddfc;
+     margin: 1px; 
+     padding: 1px;
+ 
+    background-image: url("/img/astel.jpg");
+    background-repeat: no-repeat;
+ }
+ 
+ a {
+     color: #001a49;
+ }
+ 
+ a:hover {
+     color: #680000;
+ }
+ 
+ 
+ #content {
+     background-color:#30191900;
+     width: 60%;
+     margin: 10px;
+     border: px solid #949393;
+ text-align: center;
+ margin: auto;
+ 
+ }
+ 
+ 
+ 
+ #banner {
+     background-color: rgba(51, 116, 255, 0.582);
+     margin: auto;
+     padding: 10px;
+     border: 5px solid #000000;
+     text-align: center;
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ .post {
+     margin: 15px;
+     padding: px;
+     border: 5px solid #000000;
+     background-color: rgba(51, 116, 255, 0.582);
+ 
+ 
+ 
+ }
+ 
+ .post2 {
+     margin: 15px;
+     padding: 5px;
+     border: 5px solid #000000;
+     background-color: rgba(51, 116, 255, 0.582);
+ 
+ 
+ 
+ }
+ 
+ .post .left {
+ block-size: auto;
+ margin-right: 10px;
+ }
+ .post2 .left {
+     block-size: auto;
+     margin-right: 10px;
+ 
+ 
+ }
+ 
+ .post img {
+     width: 150px;
+    
+ }
+ 
+ .post2 img {
+     width: 150px;
+   
+    
+ }
+ 
+ .gallery {
+     display: flex;
+ 
+ flex-wrap: wrap;
+ justify-content: space-around;
+ }
+ 
+ 
+ 
+ 

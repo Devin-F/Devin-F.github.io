@@ -1,1 +1,94 @@
- 
+body {
+   font-size: 15px;
+    font-family: Aptos, monospace;
+    margin: 1px; 
+    padding: 1px;
+
+   background-image: url("/img/mohg.jpg");
+}
+
+a {
+    color: #8b0303;
+}
+
+a:hover {
+    color: #680000;
+}
+
+
+#content {
+    background-color:#30191900;
+    width: 60%;
+    margin: 10px;
+    border: px solid #949393;
+text-align: center;
+margin: auto;
+
+}
+
+
+
+#banner {
+    background-color: rgba(255, 51, 51, 0.582);
+    margin: auto;
+    padding: 10px;
+    border: 5px solid #000000;
+    text-align: center;
+
+}
+
+
+
+
+
+.post {
+    margin: 15px;
+    padding: px;
+    border: 5px solid #000000;
+    background-color: rgba(255, 51, 51, 0.438);
+
+
+
+}
+
+.post2 {
+    margin: 15px;
+    padding: 5px;
+    border: 5px solid #000000;
+    background-color: rgba(255, 51, 51, 0.438);
+
+
+
+}
+
+.post .left {
+block-size: auto;
+margin-right: 10px;
+}
+.post2 .left {
+    block-size: auto;
+    margin-right: 10px;
+
+
+}
+
+.post img {
+    width: 150px;
+   
+}
+
+.post2 img {
+    width: 200px;
+  
+   
+}
+
+.gallery {
+    display: flex;
+
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+
+

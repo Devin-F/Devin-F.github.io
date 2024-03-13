@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin's Awesome Website</title>
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1>Devins Awesome Website</h1>
+            <a href="Index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="Gameguide.html">Get To School</a>
+            <a href="#" onclick="changeSheet()">Change Mode</a>
+        </div>
+        <div id="blogposts">
+            <div class="post">
+                <h1>Play the game</h1>
+                <p>Are you finally ready to face Gary and fight the faces of evil?</p>
+                <p>Click <a href="GetToSchool5/Game.html">here</a> to start your very epic journey.</p>
+            </div>
+
+            <div class="post">
+                <h2 style="display: block;">Game Guide</h1>
+                    <img src="img/Gamescreen.png" alt="Game Loading screen" class="left">
+                    <p>Get to school 5 is the long awaited finale to the Get to School Pentalogy. make sure to check all
+                        of the dialogue options to reveal hidden secrets and easter eggs. 
+                        pro tip: if you help grandma, you get an important armor which will help you on your journey. </p>
+
+                    <div class="post">
+                        <h2>Gallery</h2>
+                        <div class="gallery">
+                            <a href="img/game img 1.png"> <img src="img/game img 1.png" alt="jkg"> </a>
+                            <a href="img/game img 2.png"> <img src="img/game img 2.png" alt="jkg"> </a>
+                            <a href="img/game img 3.png"> <img src="img/game img 3.png" alt="jkg"> </a>
+                            <a href="img/game img 4.png"> <img src="img/game img 4.png" alt="jkg"> </a>
+                            <a href="img/game img 5.png"> <img src="img/game img 5.png" alt="jkg"> </a>
+
+
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+</body>
+<script>
+    var lightMode = true;
+
+    function changeSheet() {
+
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+
+
+</script>
+
+</html>
